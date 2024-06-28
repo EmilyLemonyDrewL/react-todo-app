@@ -11,3 +11,53 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.todo-input {
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+#dlt-btn {
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+#chk-btn {
+  margin-top: 5px;
+}
+
+.completed-list {
+  list-style: none;
+  padding: 0;
+}
+
+.completed-list li {
+  position: relative;
+  padding-left: 20px;
+}
+
+.completed-list li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: rgb(18, 156, 186);
+  font-weight: bold;
+}
+
+.lists-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.list {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.list:last-child {
+  margin-right: 0;
+}
